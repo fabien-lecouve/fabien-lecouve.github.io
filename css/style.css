@@ -102,6 +102,31 @@ section p {
     color: var(--yellow);
 }
 
+.main-projets {
+    margin: 20px auto;
+    width: 60%;
+}
+.section-projets {
+    display: flex;
+    gap: 10px;
+}
+.section-projets h2 {
+    text-align: center;
+}
+.section-projets > div {
+    border: 1px solid var(--yellow);
+    border-radius: 5px;
+    padding: 10px;
+}
+.section-projets p {
+    margin: 10px 0px;
+}
+.section-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 
 /* FOOTER */
 footer {
