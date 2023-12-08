@@ -104,11 +104,18 @@ section p {
 
 .main-projets {
     margin: 20px auto;
-    width: 60%;
+    width: 70%;
 }
 .section-projets {
     display: flex;
+    justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
+}
+.section-projets img {
+    width: 300px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 .section-projets h2 {
     text-align: center;
@@ -119,7 +126,8 @@ section p {
     padding: 10px;
 }
 .section-projets p {
-    margin: 10px 0px;
+    margin: 20px 0px;
+    width: 300px;
 }
 .section-links {
     display: flex;
@@ -160,6 +168,9 @@ footer aside i {
         margin: 20px 0px;
         height: auto;
     } 
+    .main-projets {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 900px) {
