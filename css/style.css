@@ -58,14 +58,19 @@ nav a {
     text-decoration: none;
     color: var(--yellow);
 }
-#btn {
+#btn, #contact-link {
     padding: 10px;
     border: 1px solid var(--yellow);
     border-radius: 5px;
 }
+#contact-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--yellow);
+}
 
 /* MAIN */
-.main-propos {
+.main-propos, .main-contact {
     height: 500px;
     display: flex;
     justify-content: center;
@@ -106,33 +111,61 @@ section p {
     margin: 20px auto;
     width: 70%;
 }
-.section-projets {
+.main-projets h2 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.section-projets-js {
     display: flex;
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
-.section-projets img {
+.section-projets-php {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.section-projets-js img, .section-projets-php img {
     width: 300px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
-.section-projets h2 {
+.images-projets-php {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.section-projets-js h3, .section-projets-php h3 {
     text-align: center;
 }
-.section-projets > div {
+.section-projets-js > div, .section-projets-php > div {
     border: 1px solid var(--yellow);
     border-radius: 5px;
     padding: 10px;
 }
-.section-projets p {
+.section-projets-php > div {
+    width: 960px;
+}
+.section-projets-js p {
     margin: 20px 0px;
     width: 300px;
+}
+.section-projets-php p {
+    text-align: justify;
 }
 .section-links {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+.main-contact p {
+    margin-bottom: 30px;
+}
+.main-contact div {
+    text-align: center;
 }
 
 
@@ -171,6 +204,13 @@ footer aside i {
     .main-projets {
         width: 60%;
     }
+    .main-projets h1, .main-projets h2  {
+        text-align: center;
+        margin-left: 0px;
+    }
+    .section-projets-php > div {
+        width: 630px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -186,7 +226,7 @@ footer aside i {
     h1 {
         text-align: center;
     }
-    .main-propos > section {
+    .main-propos > section, .main-contact > section {
         width: 70%;
     }
     .main-exp {
@@ -202,6 +242,12 @@ footer aside i {
     #line {
         height: 50px;
     }
+    .section-projets-php > div {
+        width: 300px;
+    }
+    .images-projets-php {
+        gap: 5px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -212,7 +258,7 @@ footer aside i {
         flex-direction: column;
         align-items: center;
     }
-    .main-propos > section {
+    .main-propos > section, .main-contact > section {
         width: 80%;
     }
     .main-exp {
